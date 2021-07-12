@@ -1,4 +1,8 @@
 import React from 'react'
+import StudyCards from './StudyCards'
+import PopularSubjects from './PopularSubjects'
+import StudentReview from './StudentsReview';
+import FeaturedCourses from './FeaturedCourses';
 
 
 let Home = () => {
@@ -17,7 +21,7 @@ let Home = () => {
                                         <input required type="search" size='30' className='form-control' placeholder='What do you want to learn here'  />
                                     </div>
                                     <div className='form-group'>
-                                        <input type="submit" value='Get Started' className='btn btn-danger btn-sm' />
+                                        <input type="submit" value='Get Started' className='btn btn-outline-success btn-sm' />
                                     </div>
                                 </form>
                             </div>
@@ -25,6 +29,10 @@ let Home = () => {
                     </div>
                 </div>
             </div>
+            <StudyCards/>
+            <PopularSubjects/> 
+            <StudentReview/>   
+            <FeaturedCourses/>
         </React.Fragment>
     )
 };

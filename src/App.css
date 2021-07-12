@@ -34,8 +34,21 @@
     height: 100%;
 }
 .containerDiv{
-    margin-top: 300px;
+    margin-top: 100px;
 }
+
 .textLiterate{
     color: #503611;
+}
+.learning-path-bg{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(116, 41, 51, 0.75)), url(./assets//images/join.jpg);
+    background-size: cover;
+    height: 70vh;
+    color: white;
+}
+.btn-join{
+    background-color: #F8F9FA;
+}
+.price-btn{
+    margin-bottom: '-100px' !important;
 }

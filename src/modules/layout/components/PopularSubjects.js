@@ -31,7 +31,7 @@ let PopularSubjects = () => {
                         </div>
                         <hr className='mt-0' />
                         <p className='text-center mb-2'>
-                            <button className="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <button className="btn btn-outline-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                 More...
                             </button>
                         </p>
@@ -60,7 +60,7 @@ let PopularSubjects = () => {
                         </div>
                         <hr className='mt-0' />
                         <p className='text-center mb-2'>
-                            <button className="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <button className="btn btn-outline-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                 More...
                             </button>
                         </p>
@@ -89,7 +89,7 @@ let PopularSubjects = () => {
                         </div>
                         <hr className='mt-0' />
                         <p className='text-center mb-2'>
-                            <button className="btn btn-primary btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <button className="btn btn-outline-success btn-sm" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                                 More...
                             </button>
                         </p>
