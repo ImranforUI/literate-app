@@ -45,8 +45,12 @@ let FeaturedCourses = () => {
                                                         </div>
                                                         <p className="badge badge-success badge-pill">Computer Science</p>
                                                         <h4 className="card-title">Learning To Write as a Professional Author</h4>
-                                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                                        <div>
+                                                            <span>
+                                                                <i className='fa fa-book mr-5'> 15 Lessons</i>
+                                                                <i className='fa fa-user-circle'> 48 Students</i>
+                                                            </span>
+                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -55,9 +59,17 @@ let FeaturedCourses = () => {
                                                 <div className="card">
                                                     <img className="img-fluid" alt="100%x280" src={s2} />
                                                     <div className="card-body">
-                                                        <h4 className="card-title">Special title treatment</h4>
-                                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                                        <div className='text-center'>
+                                                            <button className='btn btn-danger btn-sm mt-0'>$28.15</button>
+                                                        </div>
+                                                        <p className="badge badge-danger badge-pill">Data Science</p>
+                                                        <h4 className="card-title">Learning To Write as a Professional Author</h4>
+                                                        <div>
+                                                            <span>
+                                                                <i className='fa fa-book mr-5'> 5 Lessons</i>
+                                                                <i className='fa fa-user-circle'> 12 Students</i>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -65,9 +77,17 @@ let FeaturedCourses = () => {
                                                 <div className="card">
                                                     <img className="img-fluid" alt="100%x280" src={s3} />
                                                     <div className="card-body">
-                                                        <h4 className="card-title">Special title treatment</h4>
-                                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                                        <div className='text-center'>
+                                                            <button className='btn btn-success btn-sm mt-0'>$16.15</button>
+                                                        </div>
+                                                        <p className="badge badge-success badge-pill">Mathematics</p>
+                                                        <h4 className="card-title">Learning To Write as a Professional Author</h4>
+                                                        <div>
+                                                            <span>
+                                                                <i className='fa fa-book mr-5'> 22 Lessons</i>
+                                                                <i className='fa fa-user-circle'> 26 Students</i>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -81,9 +101,17 @@ let FeaturedCourses = () => {
                                                 <div className="card">
                                                     <img className="img-fluid" alt="100%x280" src={s4} />
                                                     <div className="card-body">
-                                                        <h4 className="card-title">Special title treatment</h4>
-                                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                                        <div className='text-center'>
+                                                            <button className='btn btn-success btn-sm mt-0'>$17.19</button>
+                                                        </div>
+                                                        <p className="badge badge-success badge-pill">Phycology</p>
+                                                        <h4 className="card-title">Learning To Write as a Professional Author</h4>
+                                                        <div>
+                                                            <span>
+                                                                <i className='fa fa-book mr-5'> 15 Lessons</i>
+                                                                <i className='fa fa-user-circle'> 18 Students</i>
+                                                            </span>
+                                                        </div>
                                                     </div>
 
                                                 </div>
@@ -92,9 +120,17 @@ let FeaturedCourses = () => {
                                                 <div className="card">
                                                     <img className="img-fluid" alt="" src={s5} />
                                                     <div className="card-body">
-                                                        <h4 className="card-title">Special title treatment</h4>
-                                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                                        <div className='text-center'>
+                                                            <button className='btn btn-danger btn-sm mt-0'>$16.15</button>
+                                                        </div>
+                                                        <p className="badge badge-danger badge-pill">Netwrtkimg</p>
+                                                        <h4 className="card-title">Learning To Write as a Professional Author</h4>
+                                                        <div>
+                                                            <span>
+                                                                <i className='fa fa-book mr-5'> 15 Lessons</i>
+                                                                <i className='fa fa-user-circle'> 26 Students</i>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -102,9 +138,17 @@ let FeaturedCourses = () => {
                                                 <div className="card">
                                                     <img className="img-fluid" alt="100%x280" src={s6} />
                                                     <div className="card-body">
-                                                        <h4 className="card-title">Special title treatment</h4>
-                                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+                                                        <div className='text-center'>
+                                                            <button className='btn btn-success btn-sm mt-0'>$19.02</button>
+                                                        </div>
+                                                        <p className="badge badge-success badge-pill">Digital Marketing</p>
+                                                        <h4 className="card-title">Learning To Write as a Professional Author</h4>
+                                                        <div>
+                                                            <span>
+                                                                <i className='fa fa-book mr-5'> 20 Lessons</i>
+                                                                <i className='fa fa-user-circle'> 11 Students</i>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

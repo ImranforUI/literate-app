@@ -9,6 +9,7 @@ import DisplayData from './modules/layout/components/DisplayData';
 import Login from './modules/layout/components/Login';
 import About from './modules/layout/components/About';
 import Contact from './modules/layout/components/Contact';
+import MainFooter from './modules/layout/components/MainFooter';
 
 
 
@@ -26,6 +27,7 @@ let App = () => {
                     <Route exact path={'/display'} component={DisplayData}/>
                     <Route exact path={'/login'} component={Login}/>
                 </Switch>
+                <MainFooter/>
             </Router>
         </React.Fragment>
     )
