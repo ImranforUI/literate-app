@@ -40,6 +40,9 @@
 .textLiterate{
     color: #503611;
 }
+.btnLiterate {
+    background-color: #96331b;
+}
 .learning-path-bg{
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(116, 41, 51, 0.75)), url(./assets//images/join.jpg);
     background-size: cover;

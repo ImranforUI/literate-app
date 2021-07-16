@@ -50,7 +50,7 @@ let Form = () => {
     };
     return (
         <React.Fragment>
-            <div className="container containerDiv">
+            <div className="container containerDiv mb-5">
                 <div className="row animated slideInLeft">
                     <div className="col">
                         <p className="h3 text-info">Please Fill in the Details</p>

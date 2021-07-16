@@ -6,7 +6,7 @@ export const USERS_FEATURE_KEY = 'user';
 let initialState = {
   loading : false,
   errorMessage : '',
-  user : [],
+  user : {},
   admin : []
 };
 
