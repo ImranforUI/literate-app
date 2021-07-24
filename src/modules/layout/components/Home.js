@@ -18,7 +18,7 @@ let Home = () => {
 
                                 <form className='form-inline'>
                                     <div className='form-group'>
-                                        <input required type="search" size='30' className='form-control' placeholder='What do you want to learn here'  />
+                                        <input required type="search" size='30' className='form-control' placeholder='What do you want to learn here' />
                                     </div>
                                     <div className='form-group'>
                                         <input type="submit" value='Get Started' className='btn btn-outline-success btn-sm' />
@@ -29,10 +29,10 @@ let Home = () => {
                     </div>
                 </div>
             </div>
-            <StudyCards/>
-            <PopularSubjects/> 
-            <StudentReview/>   
-            <FeaturedCourses/>
+            <StudyCards />
+            <PopularSubjects />
+            <StudentReview />
+            <FeaturedCourses />
         </React.Fragment>
     )
 };

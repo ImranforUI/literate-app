@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import {useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { registerUser } from '../../../redux/users/user.actions';
 
 let Form = () => {
@@ -11,10 +11,11 @@ let Form = () => {
     let [user, setUser] = useState({
         firstName: '',
         lastName: '',
-        email : '',
+        email: '',
         fatherName: '',
         motherName: '',
-        image : ''
+        image: '',
+        password: ''
     });
 
     // Handle Inputs
@@ -31,13 +32,13 @@ let Form = () => {
         let reader = new FileReader();
         reader.readAsDataURL(imageFile);
         reader.addEventListener('load', () => {
-            if(reader.result){
+            if (reader.result) {
                 setUser({
                     ...user,
-                    image : reader.result
+                    image: reader.result
                 })
             }
-            else{
+            else {
                 alert('Error Occurred');
             }
         });
@@ -46,7 +47,8 @@ let Form = () => {
     // Submit User
     let submitUser = (e) => {
         e.preventDefault();
-        dispatch(registerUser(history , user));
+        console.log(user);
+        dispatch(registerUser(user, history));
     };
     return (
         <React.Fragment>
@@ -87,6 +89,14 @@ let Form = () => {
                                         onChange={handleInput}
                                         type="text" className='form-control' placeholder='Email' />
                                 </div>
+
+                                <div className="form-group">
+                                    <input
+                                        name='password'
+                                        value={user.password}
+                                        onChange={handleInput}
+                                        type="password" className='form-control' placeholder='Password' />
+                                </div>
                                 <div className="form-group">
                                     <input
                                         name='fatherName'
@@ -103,9 +113,9 @@ let Form = () => {
                                 </div>
                                 <div className="form-group">
                                     <div className="custom-file">
-                                        <input 
-                                        onChange={changeImage}
-                                        type="file" className="custom-file-input" id="customFile" />
+                                        <input
+                                            onChange={changeImage}
+                                            type="file" className="custom-file-input" id="customFile" />
                                         <label className="custom-file-label" htmlFor="customFile">Upload Image</label>
                                     </div>
                                 </div>

@@ -1,38 +1,48 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link, useHistory } from 'react-router-dom';
+import { logout } from '../../../redux/users/user.actions';
 import { USERS_FEATURE_KEY } from '../../../redux/users/userReducer';
 
 let Navbar = () => {
 
+    let dispatch = useDispatch();
+    let history = useHistory();
     let userInfo = useSelector((state) => {
-        return state[USERS_FEATURE_KEY];
+        return state[USERS_FEATURE_KEY]
     });
 
-    let { admin } = userInfo;
+    let { loading, isAuthenticated } = userInfo;
+
+    // logoutUser
+    let logoutUser = () => {
+        dispatch(logout(history))
+    }
 
     let afterLinks = (
         <React.Fragment>
-            {
-                admin ? <React.Fragment>
-                    <li className='nav-item'>
-                        <Link to='/register' className='nav-link mx-2 text-white'>Registration</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='/display' className='nav-link text-white'>Display Data</Link>
-                    </li>
-                </React.Fragment> : null
-            }
+            <React.Fragment>
+                <li className='nav-item'>
+                    <Link to='/display' className='nav-link text-white'>Display Data</Link>
+                </li>
+                <li className='nav-item'>
+                    <Link to='#' onClick={logoutUser} className='nav-link text-white'>Logout</Link>
+                </li>
+                <li className='nav-item'>
+                    <Link to='/register' className='nav-link text-white'>Register</Link>
+                </li>
+            </React.Fragment>
         </React.Fragment>
     );
 
     let beforeLinks = (
         <React.Fragment>
             <li className='nav-item'>
-                <p className="badge badge-danger">Login For More!</p>
+                <Link to='/login' className='nav-link text-white'>Login</Link>
             </li>
         </React.Fragment>
     )
+
     return (
         <React.Fragment>
             <nav className="navbar navbar-expand-lg scrolling-navbar bg-dark fixed-top">
@@ -46,18 +56,10 @@ let Navbar = () => {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
-                        <li className="nav-item active">
+                            <li className="nav-item active">
                                 <Link to='/' className="nav-link text-white"> Home <span className="sr-only">(current)</span></Link>
                             </li>
-                            {
-                                admin &&
-                                <React.Fragment>
-                                    {
-                                        admin.length === 0 ? beforeLinks : afterLinks
-                                    }
-                                </React.Fragment>
-                            }
-                        
+
                             <li className="nav-item">
                                 <Link to='/about' className="nav-link mx-2 text-white">About</Link>
                             </li>
@@ -67,9 +69,14 @@ let Navbar = () => {
                             <li className='nav-item'>
                                 <Link to='/search' className='nav-link mx-2 text-white'>Search Data</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to='/login' className='nav-link text-white'>Login</Link>
-                            </li>
+                            {
+                                !loading &&
+                                <React.Fragment>
+                                    {
+                                        !isAuthenticated ? beforeLinks : afterLinks
+                                    }
+                                </React.Fragment>
+                            }
                         </ul>
 
                     </div>

@@ -1,36 +1,38 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import { fetchUserData } from '../../../redux/users/user.actions';
+import { useDispatch, useSelector } from "react-redux";
+import { getUserInfo } from '../../../redux/users/user.actions';
 import { USERS_FEATURE_KEY } from '../../../redux/users/userReducer';
 
 
 let SearchData = () => {
     let dispatch = useDispatch();
     let userInfo = useSelector((state) => {
-       return state[USERS_FEATURE_KEY];
+        return state[USERS_FEATURE_KEY];
     });
 
-    let [selected, setSelected] = useState([]);
+    let [selected, setSelected] = useState({});
 
     let [email, setEmail] = useState('');
+
+    let [gotData, setGotData] = useState(false);
 
 
 
     useEffect(() => {
-       dispatch(fetchUserData());
-    },[dispatch]);
+        dispatch(getUserInfo());
+    }, [dispatch]);
     // Search USer
     let searchUser = (e) => {
         e.preventDefault();
-
-        let selectedEmail = email;
-        let selectedUser = userInfo.user.filter((user) => {
-            return user.email === selectedEmail;
-        });
-        setSelected(selectedUser);
-
-        console.log(selectedUser);
+        let i = 0;
+        while (i < userInfo.users.length) {
+            if (userInfo.users[i].email === email) {
+                setSelected(userInfo.users[i]);
+                setGotData(true);
+            }
+            i++;
+        }
     };
 
     return (
@@ -42,12 +44,12 @@ let SearchData = () => {
                         <p className="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate voluptate dicta quam neque dolore, fuga, eum esse numquam aut fugiat soluta autem possimus, ipsam tempora aliquam eos? Excepturi quidem, tempora, aliquid temporibus velit autem cupiditate laboriosam animi quas tenetur repellendus.</p>
                     </div>
                 </div>
-                 {/*<pre>{JSON.stringify(userInfo)}</pre>*/}
+                {/* <p>{JSON.stringify(selected)}</p> */}
                 {/* <pre>Searched Data {JSON.stringify(selected[0])}</pre> */}
 
                 <div className="card animated slideInRight">
                     <div className="card-header bg-info text-white">
-                        <p className="h4">Search User Here</p>
+                        <p className="h4">Search user by Email</p>
                     </div>
                     <div className="card-body">
                         <form className='form-inline' onSubmit={searchUser}>
@@ -65,7 +67,7 @@ let SearchData = () => {
                 </div>
 
                 {
-                     selected.length > 0 ?
+                    gotData == true ?
                         <React.Fragment>
                             <div className="col mt-3 animated slideInLeft">
                                 <p className="h4 text-info">Your Profile</p>
@@ -73,10 +75,10 @@ let SearchData = () => {
                             <div className="row mt-2 animated slideInRight">
                                 <div className="col-md-3">
                                     <div className="card">
-                                        <img src={selected[0].image} alt="" className='img-fluid' />
+                                        <img src={selected.image} alt="" className='img-fluid' />
                                         <div className="card-body">
-                                            <p className="h5">Name : {selected[0].firstName} {selected[0].lastName}</p>
-                                            <p className="h6">Email : {selected[0].email}</p>
+                                            <p className="h5">Name : {selected.firstName} {selected.lastName}</p>
+                                            <p className="h6">Email : {selected.email}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -88,19 +90,19 @@ let SearchData = () => {
                                         <div className="card-body">
                                             <ul className="list-group">
                                                 <li className='list-group-item'>
-                                                    First Name : {selected[0].firstName}
+                                                    First Name : {selected.firstName}
                                                 </li>
                                                 <li className="list-group-item">
-                                                    Email : {selected[0].email}
+                                                    Email : {selected.email}
                                                 </li>
                                                 <li className="list-group-item">
-                                                    Last Name : {selected[0].lastName}
+                                                    Last Name : {selected.lastName}
                                                 </li>
                                                 <li className="list-group-item">
-                                                    Father Name : {selected[0].fatherName}
+                                                    Father Name : {selected.fatherName}
                                                 </li>
                                                 <li className="list-group-item">
-                                                    Mother Name : {selected[0].motherName}
+                                                    Mother Name : {selected.motherName}
                                                 </li>
                                             </ul>
                                         </div>

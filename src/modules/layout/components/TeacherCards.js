@@ -34,7 +34,7 @@ let TeacherCards = () => {
                 </div>
                 <div className="col-md-3">
                     <div className="card">
-                        <img src={team3} alt=""  height='237' width='255' />
+                        <img src={team3} alt="" height='237' width='255' />
                         <div className="card-body">
                             <p className="h4 textLiterate">Marko Dugonji</p>
                             <p className="h5 lead">Cheif Executive</p>

@@ -30,7 +30,7 @@ let StudentsReview = () => {
                                         <div className="carousel-item active">
                                             <div className="row text-center">
                                                 <div className="col-md-8 text-left">
-                                                <i className='fa fa-quote-left fa-3x text-muted'></i>
+                                                    <i className='fa fa-quote-left fa-3x text-muted'></i>
                                                     <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque sapiente numquam ipsa minima facilis fugit delectus laboriosam vero reiciendis exercitationem eligendi, labore, consectetur adipisci accusamus facere quae officia debitis!</p>
                                                     <p className="h5">Oliver Bradly <span className='text-muted small'> - United Kingdom</span></p>
                                                 </div>
@@ -42,7 +42,7 @@ let StudentsReview = () => {
                                         <div className="carousel-item">
                                             <div className="row">
                                                 <div className="col-md-8">
-                                                <i className='fa fa-quote-left fa-3x text-muted'></i>
+                                                    <i className='fa fa-quote-left fa-3x text-muted'></i>
                                                     <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eos similique eum tenetur illo tempora dolore delectus suscipit culpa velit, impedit iste ducimus voluptate! Dolor.</p>
                                                     <p className="h5">William James <span className='text-muted small'> - United State</span></p>
                                                 </div>
@@ -54,7 +54,7 @@ let StudentsReview = () => {
                                         <div className="carousel-item">
                                             <div className="row">
                                                 <div className="col-md-8">
-                                                <i className='fa fa-quote-left fa-3x text-muted'></i>
+                                                    <i className='fa fa-quote-left fa-3x text-muted'></i>
                                                     <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, eos similique eum tenetur illo tempora dolore delectus suscipit culpa velit, impedit iste ducimus voluptate! Dolor.</p>
                                                     <p className="h5">Isebella Mia <span className='text-muted small'> - United State</span></p>
                                                 </div>

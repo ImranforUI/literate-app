@@ -1,28 +1,28 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
-import {useDispatch} from 'react-redux';
-import {useHistory} from 'react-router-dom'
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom'
 import { loginUser } from '../../../redux/users/user.actions';
 
 
 let Login = () => {
     let history = useHistory()
     let dispatch = useDispatch();
-    let [admin , setAdmin] = useState({
-        id : '',
-        password : ''
+    let [user, setUser] = useState({
+        email: '',
+        password: ''
     });
 
     let handleInput = (e) => {
-      setAdmin({
-          ...admin,
-          [e.target.name] : e.target.value
-      })
+        setUser({
+            ...user,
+            [e.target.name]: e.target.value
+        })
     };
 
     let submitLogin = (e) => {
         e.preventDefault();
-        dispatch(loginUser(admin , history));
+        dispatch(loginUser(user, history));
     };
     return (
         <React.Fragment>
@@ -44,19 +44,19 @@ let Login = () => {
                                 <form onSubmit={submitLogin}>
                                     <div className="form-group">
                                         <input
-                                        name="id"
-                                        value={admin.id}
-                                        onChange={handleInput}
-                                        type="text" placeholder="Admin ID Here" className="form-control"/>
+                                            name="email"
+                                            value={user.email}
+                                            onChange={handleInput}
+                                            type="email" placeholder="Admin Email ID Here" className="form-control" />
                                     </div>
                                     <div className="form-group">
                                         <input
-                                          name="password"
-                                          value={admin.password}
-                                          onChange={handleInput}
-                                        type="password" placeholder="Password" className="form-control"/>
+                                            name="password"
+                                            value={user.password}
+                                            onChange={handleInput}
+                                            type="password" placeholder="Password" className="form-control" />
                                     </div>
-                                    <input type="submit" className="btn btn-sm btn-info" value="Login"/>
+                                    <input type="submit" className="btn btn-sm btn-info" value="Login" />
                                 </form>
                             </div>
                         </div>
