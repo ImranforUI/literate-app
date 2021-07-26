@@ -43,7 +43,7 @@ let PopularSubjects = () => {
                     </div>
                 </section>
 
-                <section className=' my-3'>
+                <section className=' my-4'>
                     <div className="card col-md-10 m-auto ">
                         <div className="row p-3">
                             <div className="col-md-5">

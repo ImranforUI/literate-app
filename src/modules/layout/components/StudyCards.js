@@ -24,7 +24,7 @@ let StudyCards = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-4 my-4">
                         <div className="card">
                             <img src={Card3} alt="" className='bg-white' />
                             <div className="card-body text-center">
