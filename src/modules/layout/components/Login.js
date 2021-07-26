@@ -47,7 +47,7 @@ let Login = () => {
                                             name="email"
                                             value={user.email}
                                             onChange={handleInput}
-                                            type="email" placeholder="Admin Email ID Here" className="form-control" />
+                                            type="email" placeholder="Email ID Here" className="form-control" />
                                     </div>
                                     <div className="form-group">
                                         <input

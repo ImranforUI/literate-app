@@ -23,13 +23,16 @@ let Navbar = () => {
         <React.Fragment>
             <React.Fragment>
                 <li className='nav-item'>
+                    <Link to='/search' className='nav-link mx-2 text-white'>Search Data</Link>
+                </li>
+                <li className='nav-item'>
                     <Link to='/display' className='nav-link text-white'>Display Data</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='#' onClick={logoutUser} className='nav-link text-white'>Logout</Link>
+                    <Link to='/register' className='nav-link text-white'>Register</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/register' className='nav-link text-white'>Register</Link>
+                    <Link to='#' onClick={logoutUser} className='nav-link text-white'>Logout</Link>
                 </li>
             </React.Fragment>
         </React.Fragment>
@@ -65,9 +68,6 @@ let Navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <Link to='/contact' className="nav-link text-white">Contact</Link>
-                            </li>
-                            <li className='nav-item'>
-                                <Link to='/search' className='nav-link mx-2 text-white'>Search Data</Link>
                             </li>
                             {
                                 !loading &&
