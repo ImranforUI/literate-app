@@ -9,7 +9,7 @@ let Home = () => {
     return (
         <React.Fragment>
             <div className='landingPage'>
-                <div className="wrappper d-flex flex-column justify-content-center align-items-center h-100">
+                <div className="wrappper d-flex flex-column justify-content-center align-items-right h-100">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 mt-3">

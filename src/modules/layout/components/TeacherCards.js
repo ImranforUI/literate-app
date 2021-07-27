@@ -14,36 +14,36 @@ let TeacherCards = () => {
                 </div>
             </div>
             <div className="row mt-3">
-                <div className="col-md-3 d-flex justify-content-center align-items-center">
-                    <div className="card hover">
-                        <img src={team1} alt="" height='237' width='255' />
+                <div className="col-md-3  my-2 d-flex justify-content-center align-items-center">
+                    <div className="card literate-hover border-rounded">
+                        <img src={team1} alt="" height='237' className='border-rounded' width='255' />
                         <div className="card-body">
                             <p className="h4 textLiterate">Max Stoiber</p>
                             <p className="h5 lead">Founder & CEO</p>
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 my-3 d-flex justify-content-center align-items-center">
-                    <div className="card">
-                        <img src={team2} alt="" height='237' width='255' />
+                <div className="col-md-3 my-2 d-flex justify-content-center align-items-center">
+                    <div className="card literate-hover border-rounded">
+                        <img src={team2} alt="" height='237' className='border-rounded' width='255' />
                         <div className="card-body">
                             <p className="h4 textLiterate">Dhony Abraham</p>
                             <p className="h5 lead">Managing Partner</p>
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 d-flex justify-content-center align-items-center">
-                    <div className="card">
-                        <img src={team3} alt="" height='237' width='255' />
+                <div className="col-md-3  my-2 d-flex justify-content-center align-items-center">
+                    <div className="card literate-hover border-rounded">
+                        <img src={team3} alt="" height='237' className='border-rounded' width='255' />
                         <div className="card-body">
                             <p className="h4 textLiterate">Marko Dugonji</p>
                             <p className="h5 lead">Cheif Executive</p>
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 mt-3 d-flex justify-content-center align-items-center">
-                    <div className="card">
-                        <img src={team4} alt="" height='237' width='255' />
+                <div className="col-md-3  my-2 d-flex justify-content-center align-items-center">
+                    <div className="card literate-hover border-rounded">
+                        <img src={team4} alt="" height='237' className='border-rounded' width='255' />
                         <div className="card-body">
                             <p className="h4 textLiterate">Rhoda Byrd</p>
                             <p className="h5 lead">Technology Officer</p>

@@ -6,7 +6,7 @@ let Contact = () => {
             <div className="container containerDiv">
                 <div className="row">
                     <div className="col text-center">
-                        <p className="h1 text-info">Contact Here</p>
+                        <p className="h1 textLiterate">Contact Here</p>
                     </div>
                 </div>
 

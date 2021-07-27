@@ -55,7 +55,7 @@ let Form = () => {
             <div className="container containerDiv mb-5">
                 <div className="row animated slideInLeft">
                     <div className="col">
-                        <p className="h3 text-info">Please Fill in the Details</p>
+                        <p className="h3 textLiterate">Please Fill in the Details</p>
                         <p className="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro animi libero velit blanditiis voluptates quisquam quo nihil dolore minima provident, beatae non? Magnam quia commodi labore sequi voluptates totam, voluptatibus sapiente ex sint doloribus fuga, similique rerum blanditiis libero asperiores.</p>
                     </div>
                 </div>

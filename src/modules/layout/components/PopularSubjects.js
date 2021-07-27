@@ -15,7 +15,7 @@ let PopularSubjects = () => {
                 </div>
 
                 <section className='mt-3'>
-                    <div className="card col-md-10 m-auto ">
+                    <div className="card col-md-10 m-auto literate-hover border-rounded">
                         <div className="row p-3">
                             <div className="col-md-5">
                                 <img src={s1} alt="" className='img-fluid' />
@@ -44,7 +44,7 @@ let PopularSubjects = () => {
                 </section>
 
                 <section className=' my-4'>
-                    <div className="card col-md-10 m-auto ">
+                    <div className="card col-md-10 m-auto literate-hover border-rounded">
                         <div className="row p-3">
                             <div className="col-md-5">
                                 <img src={s2} alt="" className='img-fluid' />
@@ -73,7 +73,7 @@ let PopularSubjects = () => {
                 </section>
 
                 <section className=' my-3'>
-                    <div className="card col-md-10 m-auto ">
+                    <div className="card col-md-10 m-auto literate-hover border-rounded">
                         <div className="row p-3">
                             <div className="col-md-5">
                                 <img src={s3} alt="" className='img-fluid' />

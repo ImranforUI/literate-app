@@ -55,3 +55,23 @@
 .price-btn{
     margin-bottom: '-100px' !important;
 }
+.border-rounded{
+    border-radius: 20px;
+}
+.literate-shadow{
+    box-shadow: 0 0 15px black;
+}
+.top-nav-collapse{
+    background-color: black;
+    padding: 0.75rem !important;
+}
+.literate-hover:hover {
+    box-shadow: 0 0 15px black;
+    transition: all 0.5s;
+}
+.bg-footer{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.53), rgba(116, 41, 51, 0.75)), url(./assets//images/literate-bg.jpg);
+    background-size: cover;
+    height: 70vh;
+    color: white;
+}

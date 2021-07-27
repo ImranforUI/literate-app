@@ -24,12 +24,12 @@ let StudentsReview = () => {
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
-                            <div className="card">
+                            <div className="card literate-hover border-rounded">
                                 <div class="carousel-inner">
                                     <div className="row p-5">
                                         <div className="carousel-item active">
                                             <div className="row text-center">
-                                                <div className="col-md-8 text-left">
+                                                <div className="col-md-8 text-left ">
                                                     <i className='fa fa-quote-left fa-3x text-muted'></i>
                                                     <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut atque sapiente numquam ipsa minima facilis fugit delectus laboriosam vero reiciendis exercitationem eligendi, labore, consectetur adipisci accusamus facere quae officia debitis!</p>
                                                     <p className="h5">Oliver Bradly <span className='text-muted small'> - United Kingdom</span></p>

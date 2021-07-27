@@ -9,7 +9,7 @@ let About = () => {
             <div className="container containerDiv mb-5">
                 <div className="row my-5">
                     <div className="col text-center">
-                        <p className="h1 text-info">About Us</p>
+                        <p className="h1 textLiterate">About Us</p>
                     </div>
                 </div>
 

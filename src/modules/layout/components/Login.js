@@ -29,7 +29,7 @@ let Login = () => {
             <div className="container containerDiv">
                 <div className="row animated slideInLeft">
                     <div className="col">
-                        <p className="h3 text-info">Login Here</p>
+                        <p className="h3 textLiterate">Login Here</p>
                         <p className="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, voluptatibus. Magni voluptate commodi deleniti consequuntur ipsam incidunt omnis aliquid libero unde enim. Illum assumenda nihil alias adipisci corporis eligendi a!</p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ let Login = () => {
                     <div className="col-md-4 m-auto">
                         <div className="card animated jello">
                             <div className="card-header bg-info text-white">
-                                <p className="h4">Login Here</p>
+                                <p className="h4 ">Login Here</p>
                             </div>
                             <div className="card-body bg-light">
                                 <form onSubmit={submitLogin}>

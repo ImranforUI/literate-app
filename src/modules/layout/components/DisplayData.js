@@ -19,7 +19,7 @@ let DisplayData = () => {
             <div className="container containerDiv">
                 <div className="row animated slideInLeft">
                     <div className="col">
-                        <p className="h3 text-info">Display User Data</p>
+                        <p className="h3 textLiterate">Display User Data</p>
                         <p className="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, reiciendis ut ipsam laboriosam distinctio sint iste autem. Dolorum tempora facere dicta amet quia et explicabo libero cum architecto cupiditate, obcaecati consequatur, ipsum, nesciunt perspiciatis asperiores blanditiis facilis saepe. Necessitatibus, sed.</p>
                     </div>
                 </div>

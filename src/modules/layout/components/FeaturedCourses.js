@@ -29,7 +29,7 @@ let FeaturedCourses = () => {
                                 <i className="fa fa-arrow-right"></i>
                             </a>
                         </div>
-                        <div className="col-12">
+                        <div className="col-12 ">
                             <div id="carouselExampleIndicators2" className="carousel slide" data-ride="carousel">
 
                                 <div className="carousel-inner">
@@ -37,8 +37,8 @@ let FeaturedCourses = () => {
                                         <div className="row">
 
                                             <div className="col-md-4 mb-3">
-                                                <div className="card">
-                                                    <img className="img-fluid" alt="100%x280" src={s1} />
+                                                <div className="card border-rounded ">
+                                                    <img className="img-fluid border-rounded" alt="100%x280" src={s1} />
                                                     <div className="card-body">
                                                         <div className='text-center'>
                                                             <button className='btn btn-success btn-sm mt-0'>$49.34</button>
@@ -56,8 +56,8 @@ let FeaturedCourses = () => {
                                                 </div>
                                             </div>
                                             <div className="col-md-4 mb-3">
-                                                <div className="card">
-                                                    <img className="img-fluid" alt="100%x280" src={s2} />
+                                                <div className="card border-rounded">
+                                                    <img className="img-fluid border-rounded" alt="100%x280" src={s2} />
                                                     <div className="card-body">
                                                         <div className='text-center'>
                                                             <button className='btn btn-danger btn-sm mt-0'>$28.15</button>
@@ -74,8 +74,8 @@ let FeaturedCourses = () => {
                                                 </div>
                                             </div>
                                             <div className="col-md-4 mb-3">
-                                                <div className="card">
-                                                    <img className="img-fluid" alt="100%x280" src={s3} />
+                                                <div className="card border-rounded">
+                                                    <img className="img-fluid border-rounded" alt="100%x280" src={s3} />
                                                     <div className="card-body">
                                                         <div className='text-center'>
                                                             <button className='btn btn-success btn-sm mt-0'>$16.15</button>
@@ -98,8 +98,8 @@ let FeaturedCourses = () => {
                                         <div className="row">
 
                                             <div className="col-md-4 mb-3">
-                                                <div className="card">
-                                                    <img className="img-fluid" alt="100%x280" src={s4} />
+                                                <div className="card border-rounded">
+                                                    <img className="img-fluid border-rounded" alt="100%x280" src={s4} />
                                                     <div className="card-body">
                                                         <div className='text-center'>
                                                             <button className='btn btn-success btn-sm mt-0'>$17.19</button>
@@ -117,13 +117,13 @@ let FeaturedCourses = () => {
                                                 </div>
                                             </div>
                                             <div className="col-md-4 mb-3">
-                                                <div className="card">
-                                                    <img className="img-fluid" alt="" src={s5} />
+                                                <div className="card border-rounded">
+                                                    <img className="img-fluid border-rounded" alt="" src={s5} />
                                                     <div className="card-body">
                                                         <div className='text-center'>
                                                             <button className='btn btn-danger btn-sm mt-0'>$16.15</button>
                                                         </div>
-                                                        <p className="badge badge-danger badge-pill">Netwrtkimg</p>
+                                                        <p className="badge badge-danger badge-pill">Networkiig</p>
                                                         <h4 className="card-title">Learning To Write as a Professional Author</h4>
                                                         <div>
                                                             <span>
@@ -135,8 +135,8 @@ let FeaturedCourses = () => {
                                                 </div>
                                             </div>
                                             <div className="col-md-4 mb-3">
-                                                <div className="card">
-                                                    <img className="img-fluid" alt="100%x280" src={s6} />
+                                                <div className="card border-rounded">
+                                                    <img className="img-fluid border-rounded" alt="100%x280" src={s6} />
                                                     <div className="card-body">
                                                         <div className='text-center'>
                                                             <button className='btn btn-success btn-sm mt-0'>$19.02</button>

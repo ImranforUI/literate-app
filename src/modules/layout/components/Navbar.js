@@ -23,16 +23,16 @@ let Navbar = () => {
         <React.Fragment>
             <React.Fragment>
                 <li className='nav-item'>
-                    <Link to='/search' className='nav-link mx-2 text-white'>Search Data</Link>
+                    <Link to='/search' className='nav-link mx-2 font-weight-bold'>Search Data</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/display' className='nav-link text-white'>Display Data</Link>
+                    <Link to='/display' className='nav-link font-weight-bold'>Display Data</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/register' className='nav-link text-white'>Register</Link>
+                    <Link to='/register' className='nav-link font-weight-bold'>Register</Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to='#' onClick={logoutUser} className='nav-link text-white'>Logout</Link>
+                    <Link to='#' onClick={logoutUser} className='nav-link text-white font-weight-bold'>Logout</Link>
                 </li>
             </React.Fragment>
         </React.Fragment>
@@ -41,17 +41,17 @@ let Navbar = () => {
     let beforeLinks = (
         <React.Fragment>
             <li className='nav-item'>
-                <Link to='/login' className='nav-link text-white'>Login</Link>
+                <Link to='/login' className='nav-link font-weight-bold'>Login</Link>
             </li>
         </React.Fragment>
     )
 
     return (
         <React.Fragment>
-            <nav className="navbar navbar-expand-lg scrolling-navbar navbar-light bg-dark fixed-top">
+            <nav className="navbar navbar-expand-sm navbar-dark scrolling-navbar fixed-top">
                 <div className="container">
                     <Link href="/" className='navbar-brand'>
-                        <i class="fas fa-edit fa-2x text-white"> Literate</i>
+                        <i class="fas fa-edit fa-2x"> Literate</i>
                     </Link>
                     <button class="navbar-toggler btn-outline-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -59,15 +59,15 @@ let Navbar = () => {
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active">
-                                <Link to='/' className="nav-link text-white"> Home <span className="sr-only">(current)</span></Link>
+                            <li className="nav-item">
+                                <Link to='/' className="nav-link font-weight-bold"> Home <span className="sr-only">(current)</span></Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link to='/about' className="nav-link mx-2 text-white">About</Link>
+                                <Link to='/about' className="nav-link mx-2 font-weight-bold">About</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to='/contact' className="nav-link text-white">Contact</Link>
+                                <Link to='/contact' className="nav-link font-weight-bold">Contact</Link>
                             </li>
                             {
                                 !loading &&
